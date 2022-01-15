@@ -1,0 +1,200 @@
+header{
+    margin-top: 75px;
+    margin-left: 75px;
+}
+
+#interesting{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-right: 50px;
+
+}
+.startJourney{
+    font-weight: 700;
+    font-size: 40px;
+}
+.Start{
+    margin: 20px;
+}
+
+.picture{
+    height: 440px;
+    width: 414px;
+}
+.picture image{
+    height: 440px;
+    width: 414px;
+}
+.picture :hover{
+    transform: scale(1.5,1.5);
+    z-index: 2;
+    transition-duration: 1s;
+}
+
+
+.preebook{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.button-1{
+    
+    text-decoration: none;
+    border: none;
+    padding: 20px 40px;
+    background-color: palevioletred;
+    color :white; 
+    font-weight: 700;
+    font-size: large;
+    border-radius: 30px;
+   
+}
+
+/* --------------------------------------------------------
+    section 2
+-------------------------------------------------------- */
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+
+    margin-left: 80px;
+    margin-bottom: 30px;
+    margin-right: 80px ;
+
+   
+}
+.first_collection{
+    padding: 10px;
+
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.185);
+    /* box-shadow: 10px 10px 8px 10px #888888; */
+}
+.star{
+    margin-right: 15px;
+}
+.fa-star.field{
+    color: orange
+}
+.fa-star.empty{
+    color: orange
+}
+
+.instPrice{
+    font-size: 30px;
+}
+
+
+
+/* -------------------------------
+button
+------------------------------- */
+.button-2{
+    text-align: right;
+    margin: 30px;
+}
+
+/* <!-- ---------------------------------------------------------------
+Extra work
+---------------------------------------------------------------  --> */
+.joinForm{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-right: 50px;
+    
+}
+.joinUs{
+    font-size: 50px;
+    
+}
+
+.join{
+    text-align: left;
+    font-size: 20px;
+}
+.form{
+    
+    margin-left: 30px;
+    margin-top: 50px;
+    padding: 50px;
+    border: 1px solid black;
+}
+
+
+
+
+/* --------------------------------------------------------
+    Footer
+-------------------------------------------------------- */
+
+footer{
+    color: white;
+    background-color: rgb(20, 0, 29);
+    text-align: center;
+    padding: 20px;
+}
+.logos{
+    margin:10px;
+    
+}
+
+
+
+
+/* ------------------------------------------------------------
+Media Queries
+------------------------------------------------------------ */
+/* Mobile  */
+@media only screen and (max-width:688px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+    }
+    .joinForm{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+    
+
+}
+/* Tablet  */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+    }
+    .joinForm{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+}   
+
